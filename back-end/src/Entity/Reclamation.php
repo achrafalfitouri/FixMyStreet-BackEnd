@@ -2,6 +2,9 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Doctrine\Orm\Filter\OrderFilter;
+use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Metadata\ApiFilter;
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Post;
@@ -34,6 +37,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 #[Vich\Uploadable]
 #[ORM\Entity(repositoryClass: ReclamationRepository::class)]
+#[ApiFilter(SearchFilter::class, strategy: 'word_start')]
+#[ApiFilter(OrderFilter::class, properties: ['created_at' => 'DESC'])]
 class Reclamation
 {
     #[ORM\Id]
