@@ -19,8 +19,7 @@ class ReclamantTest extends TestCase
     public function testAddReclamation()
     {
         $reclamant = new Reclamant();
-        $reclamation = new Reclamation(); // Assurez-vous d'importer la classe Reclamation
-
+        $reclamation = new Reclamation(); 
         $reclamant->addReclamation($reclamation);
 
         $this->assertTrue($reclamant->getReclamations()->contains($reclamation));

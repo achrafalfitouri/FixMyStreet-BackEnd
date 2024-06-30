@@ -33,7 +33,8 @@ class AuthenticationTest extends WebTestCase
     {
         $this->authenticateClient();
 
-        $this->client->request('GET', '/api/user/me', [], [], ['CONTENT_TYPE' => 'application/json', 'HTTP_AUTHORIZATION' => 'Bearer ' . $this->accessToken]);
+        $this->client->request('GET', '/api/user/me', [], [], ['CONTENT_TYPE' => 'application/json', 'HTTP_AUTHORIZATION' => 'Bearer ' 
+        . $this->accessToken]);
 
         $response = $this->client->getResponse();
 
