@@ -40,19 +40,23 @@ A web-based system designed for managing urban complaints. This project utilizes
 
 ### Backend Setup (Symfony + API Platform)
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/FixMyStreet-BackEnd.git
-cd FixMyStreet-BackEnd
 
-# Install project dependencies
-composer install
+     ```bash
+     # Clone the repository
+     git clone https://github.com/yourusername/FixMyStreet-BackEnd.git
+     cd FixMyStreet-BackEnd
 
-# Create the database
-php bin/console doctrine:database:create
+     # Install project dependencies
+     composer install
 
-# Run database migrations to set up the schema
-php bin/console doctrine:migrations:migrate
+     # Create the database
+     php bin/console doctrine:database:create
 
-# Start the Symfony development server
-symfony server:start
+     # Run database migrations to set up the schema
+     php bin/console doctrine:migrations:migrate
+
+     # Start the Symfony development server
+     symfony server:start
+### For Frontend Setup visit the following url : 
+https://github.com/achrafalfitouri/FixMyStreet-FrontEnd
+
