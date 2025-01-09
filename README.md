@@ -6,15 +6,12 @@ A web-based system designed for managing urban complaints. This project utilizes
 
 - **Complaint Submission**: Allow users to submit complaints related to urban services such as waste management, road issues, etc.
 - **Complaint Tracking**: Users can track the status of their submitted complaints.
-- **Admin Dashboard**: Administrators can manage complaints, assign them to the relevant departments, and update their statuses.
-- **Notifications**: Users receive notifications about the status updates or resolutions of their complaints.
-- **User Management**: Manage different types of users (citizens, administrators).
   
 ## Technologies
 
 - **Backend**: Symfony, API Platform
 - **Frontend**: React.js
-- **Database**: MySQL (or any preferred relational database)
+- **Database**: MySQL 
 
 ## Functionalities
 
